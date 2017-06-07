@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Ripudaman Flora">
+    <meta name="description" content="Week1-Assignment1-Web page content without style
+">
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+        <fieldset>
+            <legend>
+                Your Face <br>
+            </legend>
+            <label for="avatar">Your image:</label>
+            <input type="file" id="avatar" name="avatar" required>
+            <br>
+            <label for="avatar">Image Preview:</label>
+            <img id="preview">
+        </fieldset>
+        <fieldset>
+            <legend>
+                Your General Details <br>
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="male" value="Male" required>Male
+            <input type="radio" id="female" name="female" value="Female" required>Female
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <label for="favColor">Favorite color:</label>
+            <input type="color" id="favColor" name="favColor">
+            <br>
+            <label for="country">Which country:</label>
+            <select name="country">
+          <option value=""></option>
+          <option value="india">India</option>
+          <option value="scotland">Scotland</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="england">England</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Your Indicators <br>
+            </legend>
+            <label for="height">Height:</label> Short
+            <input type="range" id="height" name="height" min="0" max="100">Tall
+            <br>
+            <label for="salary">Salary:</label> Poor
+            <input type="range" id="salary" name="salary" min="0" max="100">Rich
+        </fieldset>
+        <fieldset>
+            <legend>
+                Your Contact Information <br>
+            </legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile">
+            <br>
+            <label for="address">Address:</label>
+            <textarea rows="2" cols="20" id="address" name="address">
+        </textarea>
+            <br>
+            <label for="contactMethod">Method to contact you:</label>
+            <input type="checkbox" name="em" value="em">Email
+            <input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
+            <input type="checkbox" name="chat" value="chat">In-app chat
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
